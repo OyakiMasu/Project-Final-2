@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Login from "./Login";
+import Memepg from "./Memepg";
 
 function Home(){
     return (
@@ -8,7 +10,6 @@ function Home(){
 
     <div className="meme-body">
      
-
     <p> <strong>Have you ever been bored and the only thing that you wanted to do was view memes well this page is all about that</strong> </p>
     <p>  <img src="meme1.jpg" alt="water meme"/>  </p>
 
@@ -17,13 +18,10 @@ function Home(){
      <p> <img src="meme4.jpg" alt="-harrypotter-meme"/> </p>     
 
    </div>
-
    
-
-
-
-    
     <Navbar/>
+    <Login/>
+    <Memepg/>
 </div>
 
     )

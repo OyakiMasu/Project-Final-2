@@ -7,3 +7,4 @@ function Memepg(){
         </div>
     )
 }
+export default Memepg
