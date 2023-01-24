@@ -4,6 +4,7 @@ import Login from "./Login";
 import Memepg from "./Memepg";
 
 function Home(){
+    
     return (
 <div className="home-container">
     <h1>Meme Hub</h1>
@@ -18,7 +19,6 @@ function Home(){
      <p> <img src="meme4.jpg" alt="-harrypotter-meme"/> </p>     
 
    </div>
-   
     <Navbar/>
     <Login/>
     <Memepg/>
