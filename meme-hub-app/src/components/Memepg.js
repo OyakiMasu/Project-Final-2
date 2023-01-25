@@ -3,7 +3,7 @@ import React from "react";
 function Memepg() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [memes, setMemes] = useState([]);
+    const [items, setItems] = useState([]);
   
     useEffect(() => {
       fetch("https://imgflip.com/api")
@@ -30,7 +30,7 @@ function Memepg() {
         <ul>
           {items.map(item => (
             <li key={item.id}>
-              {item.name} {item.price}
+              {item.name} {item.image}
             </li>
           ))}
         </ul>
