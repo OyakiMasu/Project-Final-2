@@ -7,9 +7,12 @@ function Home(){
     
     return (
 <div className="home-container">
-    <h1>Meme Hub</h1>
 
-    <div className="meme-body">
+ <h1>Meme Hub</h1>
+
+  <Navbar/>
+  
+    <div className="meme-body" id="home">
      
     <p> 
 
@@ -23,7 +26,6 @@ function Home(){
      <p> <img src="meme4.jpg" alt="-harrypotter-meme"/> </p>     
 
    </div>
-    <Navbar/>
     <Login/>
     <Memepg/>
    </div>
