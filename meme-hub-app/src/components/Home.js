@@ -6,9 +6,10 @@ import Memepg from "./Memepg";
 function Home(){
     
     return (
+      
 <div className="home-container">
 
- <h1>Meme Hub</h1>
+
 
   <Navbar/>
   
