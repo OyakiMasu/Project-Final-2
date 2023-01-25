@@ -25,9 +25,9 @@ function Home(){
 
      <p> <img src="meme4.jpg" alt="-harrypotter-meme"/> </p>     
 
-   </div>
-    <Login/>
-    <Memepg/>
+  </div>
+  <Login/>
+  <Memepg/>
    </div>
 
     )
