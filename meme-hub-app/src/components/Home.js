@@ -11,7 +11,11 @@ function Home(){
 
     <div className="meme-body">
      
-    <p> <strong>Have you ever been bored and the only thing that you wanted to do was view memes well this page is all about that</strong> </p>
+    <p> 
+
+    <strong>Have you ever been bored and the only thing that you wanted to do was view memes well this page is all about that.</strong> 
+
+    </p>
     <p>  <img src="meme1.jpg" alt="water meme"/>  </p>
 
      <p> <img src="meme2.webp" alt="plane-meme"/> </p>  
@@ -22,7 +26,7 @@ function Home(){
     <Navbar/>
     <Login/>
     <Memepg/>
-</div>
+   </div>
 
     )
 }
