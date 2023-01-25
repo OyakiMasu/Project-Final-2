@@ -12,12 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* 
 h1{
   background-color: rgb(100, 237, 219);
   padding: 20px;
     
-}
+} */
 
 .App{
   background-color: rgb(33, 156, 150);
@@ -45,3 +45,4 @@ h2 {
   size: large;
   
 }
+

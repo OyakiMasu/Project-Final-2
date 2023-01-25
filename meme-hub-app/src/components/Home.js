@@ -7,13 +7,12 @@ import image2 from "../images/meme2.webp"
 import images3 from "../images/meme4.jpg"
 
 function Home(){
-    
    return (
+
 <div className="home-container">
    <h1>Meme Hub</h1>
-
-   <Navbar/>
-    <div className="meme-body" id="home"> 
+  <Navbar/>
+    <div className="meme-body" id="home">
     <p> 
     <strong id="toptext"> Welcome to the Meme Page Generator !!!!!!!!!! </strong>
 
