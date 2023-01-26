@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Memepg from "./Memepg";
 import images from "../images/meme1.jpg"
 import image2 from "../images/meme2.webp"
 import images3 from "../images/meme4.jpg"
 
+
 function Home(){
-   return (
+     return (
 
 <div className="home-container">
    <h1>Meme Hub</h1>
@@ -35,7 +35,7 @@ function Home(){
 
   </div>
   
-   <Memepg/>
+  
    </div>
 
     )
