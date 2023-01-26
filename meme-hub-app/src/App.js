@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home';
 import React from 'react';
@@ -9,7 +8,6 @@ import Login from './components/Login';
 function App() {
   return (
     <div className="App">
-      
     <Switch>
       <Route path='/login'>
         <Login />
@@ -17,8 +15,7 @@ function App() {
       <Route path='/'>
         <Home />
       </Route>
-    </Switch>
-    
+    </Switch> 
       </div>
   );
 }
