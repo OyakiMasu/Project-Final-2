@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import Navbar from "./Navbar";
 
 function Login() {
  const [username, setUsername] = useState("");
  const [password, setPassword] = useState("");
-
 
  const handleSubmit = event => {
    event.preventDefault();
@@ -11,9 +11,9 @@ function Login() {
    console.log("Password:", password);
  };
 
-
   return (
     <div>
+         <Navbar/>
 
     <form onSubmit={handleSubmit}>
      <label>
@@ -40,11 +40,10 @@ function Login() {
 
      {/* <button type="submit">Sign up</button> */}
 
-
-
-
    </form>
    
+
+
    </div>
 
    

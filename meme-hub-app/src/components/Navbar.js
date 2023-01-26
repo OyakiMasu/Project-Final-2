@@ -6,7 +6,7 @@ function Navbar(){
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <h3 className="navbar-brand">MEME HUB</h3>
+            {/* <h3 className="navbar-brand">MEME HUB</h3> */}
 
             <NavLink to="/">HOME</NavLink> 
             <NavLink to="/login">MEME PAGE</NavLink> 
