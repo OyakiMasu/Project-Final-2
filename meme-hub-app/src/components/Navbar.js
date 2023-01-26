@@ -1,6 +1,5 @@
 import React from "react";
-import {NavLink} from "react-router-dom"
-
+import { NavLink } from "react-router-dom";
 
 function Navbar(){
     return (
@@ -13,10 +12,9 @@ function Navbar(){
 
             {/*<a href ="">HOME</a>
            <a href ="">MEME PAGE</a>*/}
-          </div>
-        </nav>
-    )
+      </div>
+    </nav>
+  );
 }
 
-
-export default Navbar
+export default Navbar;
