@@ -6,6 +6,7 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
@@ -46,7 +47,44 @@ h2 {
   
 }
 
+
+.nav-bar-link:visited {
+  color: rgb(36, 180, 180);
+}
+
+.nav-bar-link:hover {
+  color: white;
+  background-color: #111;
+  
+}
+.nav-bar-link{
+display: block;
+padding: 8px;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: large;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container-fluid{
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 57px
+}
+
+.navbar-text{
+  color: white;
+  text-shadow: 2px 2px 5px rgb(36, 180, 180);
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 60px;
+  font-weight: 500;
+=======
  .logbtn{
   text-decoration: none;
+
 }
 
