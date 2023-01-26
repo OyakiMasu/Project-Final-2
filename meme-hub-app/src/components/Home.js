@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Login from "./Login";
 import Memepg from "./Memepg";
 import images from "../images/meme1.jpg"
 import image2 from "../images/meme2.webp"
@@ -35,7 +34,7 @@ function Home(){
     <p>Explore this page by clicking into the Memepg </p>
 
   </div>
-   <Login/>
+  
    <Memepg/>
    </div>
 

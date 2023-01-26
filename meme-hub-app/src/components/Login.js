@@ -1,36 +1,46 @@
-import React from "react";
-import { useHistory } from 'react-router-dom';
-import axios from "axios"
+import React, { useState } from "react";
 
-const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const history = useHistory();
+function Login() {
+ const [username, setUsername] = useState("");
+ const [password, setPassword] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await axios.post('/api/login', { email, password });
-      localStorage.setItem('token', res.data.token);
-      history.push('/memes');
-    } catch (err) {
-      console.error(err);
-    }
-  };
+
+ const handleSubmit = event => {
+   event.preventDefault();
+   console.log("Username:", username);
+   console.log("Password:", password);
+ };
+
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Email:
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-      </label>
-      <label>
-        Password:
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      </label>
-      <button type="submit">Log in</button>
-    </form>
-  );
-};
+    <div>
 
-export default Login
+    <form onSubmit={handleSubmit}>
+     <label>
+       Username:
+       <input
+         type="text"
+         value={username}
+         onChange={event => setUsername(event.target.value)}
+       />
+     </label>
+     <br />
+     <label>
+       Password:
+       <input
+         type="password"
+         value={password}
+         onChange={event => setPassword(event.target.value)}
+       />
+     </label>
+     <br />
+     <button type="submit">Login</button>
+   </form>
+   
+   </div>
+
+   
+ );
+}
+
+export default Login;
