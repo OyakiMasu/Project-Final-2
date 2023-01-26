@@ -1,22 +1,20 @@
 import React from "react";
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
+function Navbar() {
+  return (
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        {/* <h3 className="navbar-brand">MEME HUB</h3> */}
 
-function Navbar(){
-    return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-          <div className="container-fluid">
-            {/* <h3 className="navbar-brand">MEME HUB</h3> */}
+        <NavLink to="/">HOME</NavLink>
+        <NavLink to="/login">MEME PAGE</NavLink>
 
-            <NavLink to="/">HOME</NavLink> 
-            <NavLink to="/login">MEME PAGE</NavLink> 
-
-            {/*<a href ="">HOME</a>
+        {/*<a href ="">HOME</a>
            <a href ="">MEME PAGE</a>*/}
-          </div>
-        </nav>
-    )
+      </div>
+    </nav>
+  );
 }
 
-
-export default Navbar
+export default Navbar;
