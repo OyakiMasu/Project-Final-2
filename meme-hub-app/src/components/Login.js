@@ -34,7 +34,15 @@ function Login() {
        />
      </label>
      <br />
-     <button type="submit">Login</button>
+      <button  type="submit"> 
+        <a className="logbtn" href="/memepg">Login</a>
+      </button>
+
+     {/* <button type="submit">Sign up</button> */}
+
+
+
+
    </form>
    
    </div>
