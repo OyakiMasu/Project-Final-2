@@ -20,25 +20,67 @@ function Memepg(){
             </div>
         )
     })
-        const onClickHandler = () => {
-             console.log("getting a meme");
-        };
 
-        return ( 
-          <div>
-          <button onclick={onClickHandler}>Click me for a meme!</button>
-          </div>
-            
-        );
+    const [url, setUrl] =useState(null);
+      const getRandomMeme = async () => {
+         const response =await fetch(URL);
+         const body =await response.json();
+         return body.url;
       
+      };
+      
+      const onClickHandler =async () => { 
+          const url = await getRandomMeme();
+      
+             setUrl(url);
+        };
+      
+        useEffect(() => {
+          onClickHandler();
+        }, []);
+      
+        return (
+          <div id ="Memepg">
+            <button onClick={onClickHandler}>Click me for a meme</button>
+            {DisplayMemes}
+            <span>{url}</span>
+            <img scr={url} />
+          </div>
+        );
+        
 
     
-    return (
-        <div id="MemePg">
+    // return (
+    //     <div id="MemePg">
 
-            {DisplayMemes}
+    //         {DisplayMemes}
             
-        </div>
-    )
+    //     </div>
+    // )
 }
-export default Memepg
+ export default Memepg
+// export default Memepg = () => {
+//   const [url, setUrl] =useState(null);
+
+//   const onClickHandler = async () => {
+// const getRandomMeme = async () => {
+
+// }
+//     const url = await getRandomMeme();
+
+//        setUrl(url);
+//   };
+
+//   useEffect(() => {
+//     onClickHandler();
+//   }, []);
+
+//   return (
+//     <div>
+//       <button onClick={onClickHandler}>Click me for a meme</button>
+//       <span>{url}</span>
+//       <img scr={url} />
+//     </div>
+//   );
+  //};
+  
