@@ -1,17 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function Memepg() {
-    const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [items, setItems] = useState([]);
+  let [memes, setMeme] = useState([])
+   
   
     useEffect(() => {
       fetch("https://imgflip.com/api")
-        .then(res => res.json())
-        .then(
-          (result) => {
-            setIsLoaded(true);
-            setItems(result);
+        .then((resp) => resp.json())
+        .then(data => setMeme(data));
+            
           },
          
           (error) => {
