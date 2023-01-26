@@ -1,38 +1,27 @@
 import React, { useEffect, useState } from "react";
 
+const API_URL = "https://imgflip.com/api"
+
 function Memepg() {
-  let [memes, setMeme] = useState([])
+  const [memes, setMemes] = useState(null)
    
   
     useEffect(() => {
       fetch("https://imgflip.com/api")
-        .then((resp) => resp.json())
-        .then(data => setMeme(data));
-            
-          },
-         
-          (error) => {
-            setIsLoaded(true);
-            setError(error);
-          }
-        )
-    }, [])
-  
-    if (error) {
-      return <div>Error: {error.message}</div>;
-    } else if (!isLoaded) {
-      return <div>Loading...</div>;
-    } else {
-      return (
-        <ul>
-          {items.map(item => (
-            <li key={item.id}>
-              {item.name} {item.image}
-            </li>
-          ))}
-        </ul>
-      );
-    }
+        .then(r => r.json())
+        .then(data => setMemes(data.memes))
+      }, [])
+     
+      if (!memes){
+        return <h2>Loading...</h2>
+      }
+
+    return (
+      <div>
+          <p> Funny</p>
+          <img src={memes} alt="Random Meme" />
+      </div>
+    );
   }
 
-  export default Memepg
+  export default Memepg;
