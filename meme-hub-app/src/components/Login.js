@@ -12,38 +12,42 @@ function Login() {
   };
 
   return (
-    <div>
-      <Navbar />
-
-      <form onSubmit={handleSubmit}>
-        <label>
-          Username:
-          <input
-            type="text"
-            value={username}
-            onChange={(event) => setUsername(event.target.value)}
-          />
-        </label>
-        <br />
-        <label>
-          Password:
-          <input
-            type="password"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-          />
-        </label>
-        <br />
-        <button type="submit">
-          <a className="logbtn" href="/memepg">
-            Login
-          </a>
+  <div className="log-container">
+    <Navbar/>
+    
+  <div className="card" style={{width: "30%", margin: "0 auto"}}>
+  <div className="card-body">
+    <h4 className="card-title text-center">Login</h4>
+    <form onSubmit={handleSubmit}>
+      <div className="form-group">
+        <label htmlFor="username">Username</label>
+        <input 
+          type="text" 
+          className="form-control" 
+          id="username" 
+          value={username}
+          onChange={(event) => setUsername(event.target.value)}
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="password">Password</label>
+        <input 
+          type="password" 
+          className="form-control" 
+          id="password" 
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+        />
+      </div>
+        <button type="submit" className="btn btn-primary btn-block">Login
+        <a className="logbtn" href="/memepg"> Login </a> 
         </button>
+    </form>
+  </div>
+</div>
+</div>
 
-        {/* <button type="submit">Sign up</button> */}
-      </form>
-    </div>
-  );
+  )
 }
 
 export default Login;

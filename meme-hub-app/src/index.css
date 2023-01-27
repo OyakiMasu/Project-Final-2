@@ -9,6 +9,10 @@
 --turquoise: #72efddff;
 --aquamarine: #80ffdbff; */
 
+html, body, body > div, .app {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -26,14 +30,21 @@ code {
 }
 
 h1{
-  background-color: rgb(100, 237, 219);
-  color: aliceblue;
+  background-color: rgb(8, 8, 8);
+  color: white;
   padding: 20px;
-    
+  font-size: 60px;
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;  */
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 72px;
+  background: -webkit-linear-gradient(rgb(3, 8, 8), rgb(18, 230, 230));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .App{
-  background-color: rgb(33, 156, 150);
+  /* background-color: rgb(59, 245, 236); */
+  background-color: rgb(188, 228, 228);
   
   
 }
@@ -52,19 +63,27 @@ img{
 
 p {
   font-size: larger;
-  font-family:Arial, Helvetica, sans-serif;
+  /* font-family:Arial, Helvetica, sans-serif; */
+  font-family: 'Chakra Petch', sans-serif;
   
 
 }
 
-h1{
+/* h1{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-}
+} */
 
 
 h2 {
   size: large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+  text-transform: uppercase;
+  background-color: aliceblue;
+
+
+
   
 }
 
@@ -80,9 +99,9 @@ h2 {
 }
 .nav-bar-link{
 display: block;
-padding: 8px;
+padding: 20px;
 text-align: center;
-padding: 14px 16px;
+padding: 20px 20px 20px ;
 text-decoration: none;
 font-size: large;
 font-family: Georgia, 'Times New Roman', Times, serif;
@@ -90,10 +109,10 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 .container-fluid{
   background-color: #333;
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  padding: 20px ;
   overflow: hidden;
-  height: 57px
+  height: 0px
 }
 
 .navbar-text{
@@ -103,13 +122,19 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   font-family: Georgia, 'Times New Roman', Times, serif;
   height: 60px;
   font-weight: 500;
-=======
- .logbtn{
-  text-decoration: none;
-
+ 
 }
 
-  .container-fluid {
+.logbtn{
   text-decoration: none;
 }
 
+
+.sidelogo {
+  height: min-content ;
+
+}
+
+.log-container {
+  display: grid;
+}

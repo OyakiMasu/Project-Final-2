@@ -1,11 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import images4 from "../images/meme-hub-logo.png";
 
 function Navbar(){
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-          <div className="container-fluid">
-            <p className="navbar-text">MEME HUB</p>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container">
+            {/* <p className="navbar-text">MEME HUB</p> */}
+            <img src={images4} alt="logo2" className="sidelogo"></img>
 
             <NavLink to="/" className="nav-bar-link">HOME</NavLink> 
             <NavLink to="/login" className="nav-bar-link">MEME PAGE</NavLink> 
