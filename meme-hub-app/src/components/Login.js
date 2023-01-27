@@ -39,8 +39,8 @@ function Login() {
           onChange={(event) => setPassword(event.target.value)}
         />
       </div>
-        <button type="submit" className="btn btn-primary btn-block">Login
-        <a className="logbtn" href="/memepg"> Login </a> 
+        <button type="submit" className="btn btn-primary btn-block">
+        <a className="logbtn" href="/memepg"> Login</a> 
         </button>
     </form>
   </div>
