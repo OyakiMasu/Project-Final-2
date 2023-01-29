@@ -42,4 +42,4 @@ This project was build with :
      </ul>
 
 #### LICENSE 
-* This project is licensed under MIT License
+* This project is licensed under MIT License .
