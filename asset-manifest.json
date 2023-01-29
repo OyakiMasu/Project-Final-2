@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04561563.css",
+    "main.js": "/static/js/main.685e8fa2.js",
+    "static/js/787.3ab34c61.chunk.js": "/static/js/787.3ab34c61.chunk.js",
+    "static/media/meme1.jpg": "/static/media/meme1.e079c79f2bf833c3a80d.jpg",
+    "static/media/meme-hub-logo.png": "/static/media/meme-hub-logo.e9bd02507f6bfc3134e4.png",
+    "static/media/meme4.jpg": "/static/media/meme4.f3590d91806571b3fb62.jpg",
+    "static/media/meme2.webp": "/static/media/meme2.cb9dbf2b88b86ce97c07.webp",
+    "index.html": "/index.html",
+    "main.04561563.css.map": "/static/css/main.04561563.css.map",
+    "main.685e8fa2.js.map": "/static/js/main.685e8fa2.js.map",
+    "787.3ab34c61.chunk.js.map": "/static/js/787.3ab34c61.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04561563.css",
+    "static/js/main.685e8fa2.js"
+  ]
+}
