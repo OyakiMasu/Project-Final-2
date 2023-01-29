@@ -14,7 +14,7 @@ This project was build with :
   <ol>
     <li>Intro</li>
     <li>Project Info</li>
-    <li></li>
+
 </ol>
 
 ### Intro
